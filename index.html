@@ -150,30 +150,30 @@
 <form name="myForm" class="form-style-7" action="display.html" method="GET">
 <ul>
 <li>
-    <label for="fname">First Name</label>
+    <label for="fname">First Name *</label>
     <input type="text" name="fname" placeholder="Enter your first name here" required>
 </li>
 <li>
-    <label for="lname">Last Name</label>
+    <label for="lname">Last Name *</label>
     <input type="text" name="lname" placeholder="Enter your last name here" required>
 </li>
 <li>
     <label for="email">Email</label>
-    <input type="email" name="email" required placeholder="Enter any valid email address" >
+    <input type="email" name="email" placeholder="Enter any valid email address" >
 </li>
 <li>
-    <label for="phone">Phone Number</label>
+    <label for="phone">Phone Number *</label>
     <input type="number" name="phone" placeholder="Any 10-digit Home/Cell Phone Number" 
 			min="1000000000" max="9999999999" required>
 </li>
 <li>
-    <label for="address">Address</label>
+    <label for="address">Address *</label>
     <input type="text" name="address" placeholder="Enter your home address" required>
 </li>
 <li>
     <label for="education">Education level</label>
 	  <select name="education">
-    <option>(Select Education)</option>
+    <option>(None Selected)</option>
     <option value="High School">High School</option>
     <option value="College">College</option>
     <option value="Graduate">Graduate</option>
@@ -183,22 +183,22 @@
 <li>
     <label for="income">Income (yearly)</label>
   <select name="income">
-    <option>(Select Income)</option>
+    <option>(None Selected)</option>
     <option value="Less than $50K">Less than $50K</option>
     <option value="Between $50k-$100k">Between $50k-$100k</option>
     <option value="Above $100k">Above $100k</option>
   </select>
 </li>
 <li>
-    <label for="pw">Enter Password</label>
+    <label for="pw">Enter Password *</label>
     <input type="password" name="pw" id="pass" required placeholder="Enter Password">
 </li>
 <li>
-    <label for="pw2">Confirm Password</label>
+    <label for="pw2">Confirm Password *</label>
     <input type="password" name="pw2" id="c_pass" placeholder="Confirm Password" onblur="confirmPass()" required>
 </li>
 <li>
-	<input type="checkbox" name="terms" required> I have read and agree to the terms page below
+	<input type="checkbox" name="terms" required> I have read and agree to the terms page below *
     <span2><a href="terms.html">Terms Page</span2>
 </li>
 <html>

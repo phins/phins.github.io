@@ -1,0 +1,81 @@
+
+<html>
+<head>
+<title>Document sans-titre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="robots" content="noindex" />
+
+<style>
+	#name, #lname, #email, #phone, #address, #education, #income, #password { 
+	font-weight: bold;
+	color: 054C11; 
+	background-color:E7E7E7; 
+	padding-left:8px; 
+	padding-right:8px; 
+	}
+	P { 
+	text-align: center 
+	}
+	H2 { 
+	text-align: center 
+	}
+	body {
+    background-color: E7E7E7;
+}
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h2>Received: </h2>
+<p><b>First Name: </b> <span id="name" ></span></p>
+<p><b>Last Name: </b><span id="lname"></span></p>
+<p><b>E-mail: </b> <span id="email" ></span></p>
+<p><b>Phone: </b><span id="phone"></span></p>
+<p><b>Address: </b> <span id="address" ></span></p>
+<p><b>Education: </b><span id="education"></span></p>
+<p><b>Income: </b> <span id="income" ></span></p>
+<p><b>Password: </b><span id="password"></span></p>
+
+<script language="JavaScript">
+  function processUser()
+  {
+    var parameters = location.search.substring(1).split("&");
+
+    var temp = parameters[0].split("=");
+    l = unescape(temp[1]);
+    temp = parameters[1].split("=");
+    p = unescape(temp[1]);
+	temp = parameters[2].split("=");
+    o = unescape(temp[1]);
+    temp = parameters[3].split("=");
+    i = unescape(temp[1]);
+	temp = parameters[4].split("=");
+    u = unescape(temp[1]);
+    temp = parameters[5].split("=");
+    y = unescape(temp[1]);
+    temp = parameters[6].split("=");
+    t = unescape(temp[1]);
+    temp = parameters[7].split("=");
+    r = unescape(temp[1]);
+	
+    document.getElementById("name").innerHTML = l;
+    document.getElementById("lname").innerHTML = p;
+    document.getElementById("email").innerHTML = o;
+    document.getElementById("phone").innerHTML = i;
+    document.getElementById("address").innerHTML = u;
+    document.getElementById("education").innerHTML = y;
+    document.getElementById("income").innerHTML = t;
+    document.getElementById("password").innerHTML = r;
+  
+  }
+  processUser();
+  </script>
+<p>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=san%20francisco%20state%20university&key=AIzaSyC6PQ0jFYtSlhxDS6urO_5nd7dD8QoX6i0" allowfullscreen></iframe>
+</p>
+<form method="get" action="parameters.html">
+  <p><input type="submit" name="submit" value="Return"></p>
+</form>
+</body>
+</html>
